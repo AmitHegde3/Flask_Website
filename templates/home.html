@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amit_Flask_Website</title>
+  <!--Bootstrap Support here -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!--Bootstrap ends here  -->
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-2 mb-5">{{framework_name}} Websites</h1>
+<img src="https://www.creativeitinstitute.com/images/course/course_1663052056.jpg" class="img-fluid mb-5" alt="Web_development">
+  <h2 class="text-center mb-3">About flask</h2> 
+<p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    <h3>Options</h3>
+    <p>To Do List</p>
+    <!--Inserting Dynamic data into the website using flask  -->
+    <p>
+      <div class="mb-4">
+        {% for job in jobs%}
+          {%include 'project_info.html'%}
+        {% endfor%}
+      
+    </p>
+      </div>
+  <div class="text-center">
+  <button class="btn btn-primary btn-lg mt-2 mb-3">Click here</button>
+<p>Copyright @ Amit</p>
+  </div>
+  </div>
+</body>
+</html>

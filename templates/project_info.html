@@ -1,0 +1,12 @@
+<div class='border-bottom mb-5 pb-2 row'>
+  <div class='col-10'>
+            <h4 style="color: rgb(120, 120, 120);" class="mb-2">{{job['title']}}</h4>
+            <p>Time required to finish:<strong> {{job['time']}}</strong></p>
+              {% if 'slaray' in job%}
+            <p>Salaray: <strong>{{job['slaray']}}</strong></p>
+              {%endif%}
+  </div>
+  <div class="col-2">
+  <button type="button" class="btn btn-outline-success">Success</button>
+  </div>
+</div>
