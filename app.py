@@ -12,7 +12,7 @@ JOBS = [
   {
     'id':2,
     'title': "FRPS Project",
-    'time' : "12hrs",
+    'time' : "10hrs",
     
   },
 {
