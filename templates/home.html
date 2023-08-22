@@ -10,11 +10,24 @@
   <!--Bootstrap ends here  -->
 </head>
 <body>
+  {% include 'nav.html' %}
+  
+  
   <div class="container">
+    <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2020/07/Top-6-Front-End-Web-Development-Tools-to-Increase-Your-Productivity-in-2020-1.jpg" class="img-fluid mb-5"  alt="Web_development">
     <h1 class="text-center mt-2 mb-5">{{framework_name}} Websites</h1>
-<img src="https://www.creativeitinstitute.com/images/course/course_1663052056.jpg" class="img-fluid mb-5" alt="Web_development">
-  <h2 class="text-center mb-3">About flask</h2> 
-<p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+  <h2 class="text-center mb-3">About flask</h2>
+    <div class="row">
+<div class="col-md-6">
+<p class="lead">Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.[2] It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions. However, Flask supports extensions that can add application features as if they were implemented in Flask itself. Extensions exist for object-relational mappers, form validation, upload handling, various open authentication technologies and several common framework related tools.</p>
+</div>
+<div class="d-none d-md-block col-md-6">
+      <img src="https://miro.medium.com/v2/resize:fit:800/1*Q5EUk28Xc3iCDoMSkrd1_w.png" class="img-fluid" alt="flask_img">
+</div>
+      
+    </div>
+
     <h3>Options</h3>
     <p>To Do List</p>
     <!--Inserting Dynamic data into the website using flask  -->
@@ -31,5 +44,6 @@
 <p>Copyright @ Amit</p>
   </div>
   </div>
+  {% include 'foot.html'%}
 </body>
 </html>
