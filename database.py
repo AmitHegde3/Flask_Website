@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine, text
 import os
 
-#Do  ot use " " in seceret
+#Do not use " " in seceret
 my_secret = os.environ['DB_CONNECTION_STRING']
 #this info is senstive never share it in github!!
 engine = create_engine(my_secret)
