@@ -2,7 +2,7 @@ from sqlalchemy import create_engine, text
 import os
 
 #Do not use " " in seceret
-my_secret = os.getenv['DB_CONNECTION_STRING']
+my_secret = os.environ['DB_CONNECTION_STRING']
 #this info is senstive never share it in github!!
 engine = create_engine(my_secret)
 
