@@ -21,3 +21,28 @@ with engine.connect() as conn:
     li.append(result_dicts)
 
   print(li)
+
+# def load_id(id):
+#   with engine.conn() as conn:
+#     result = conn.execute(text("select * from todo where id= :val"),val=id)
+#     rows = result.all()
+#     if(len(rows)==0):
+#       return None
+#     else:
+#       return dict(rows[0])
+
+
+def add_todo_db(data):
+  
+  with engine.connect() as conn:
+    print("\n\nData is:\n\n", data)
+    print("\n\n")
+    query = text(
+      "INSERT INTO todo(title,time,slaray) values(:title ,:time ,:salary)")
+    conn.execute(
+      query, dict(title=data['title'],
+                  time=data['time'],
+                  salary=data['salary']))
+   
+    conn.commit()
+    print("\n\n----Updated DB-----\n\n")
